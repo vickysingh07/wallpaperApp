@@ -2,6 +2,7 @@ import 'package:wallpaper_app/model/categories_model.dart';
 import 'package:wallpaper_app/model/categories_model.dart';
 
 List <CategoriesModel> getCategories(){
+  String apiKey = "563492ad6f91700001000001be08095f42954b3f95dfd068e19c7ef8";
 // ignore: deprecated_member_use
 List<CategoriesModel> categories = List();
 CategoriesModel categoriesModel = new CategoriesModel();
