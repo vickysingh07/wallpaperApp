@@ -101,7 +101,6 @@ class _HomeState extends State<Home> {
                 }),
               ),
               wallpapersList(wallpapers: wallpapers, context: context),
-              SizedBox(height: 16),
             ],
           ),
         ),
