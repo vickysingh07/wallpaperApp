@@ -1,8 +1,11 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:wallpaper_app/data/data.dart';
 import 'package:wallpaper_app/model/categories_model.dart';
 import 'package:wallpaper_app/widget/widgets.dart';
+import 'package:http/http.dart' as http;
+import 'package:wallpaper_app/data/data.dart';
+
 
 class Home extends StatefulWidget {
   @override
@@ -10,10 +13,24 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  String apiKEY = "563492ad6f91700001000001be08095f42954b3f95dfd068e19c7ef8";
   // ignore: deprecated_member_use
   List<CategoriesModel> categories = List();
+
+  getTrendingWallpapers() async{
+    var response = await http.get(Uri.parse('https://api.pexels.com/v1/curated?per_page=30&page=1'),
+    headers: {
+      "Authorization" : apiKEY
+    });
+    Map<String,dynamic> jsonData = jsonDecode(response.body);
+    jsonData["photos"].forEach((element){
+      print(element);
+    });
+  }
+
   @override
   void initState() {
+    getTrendingWallpapers();
     categories = getCategories();
     // TODO: implement initState
     super.initState();
