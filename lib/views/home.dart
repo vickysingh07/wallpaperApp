@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:wallpaper_app/model/categories_model.dart';
 import 'package:wallpaper_app/model/wallpaper_model.dart';
 import 'package:wallpaper_app/views/categorie.dart';
@@ -91,7 +92,8 @@ class _HomeState extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Made For ",style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black54, fontSize: 16),),
-                    Text("Anshika Singh", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 16),)
+                    Text("Anshika Singh ", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 16),),
+                    Icon(MdiIcons.heart)
                   ],
                 ),
               ),
