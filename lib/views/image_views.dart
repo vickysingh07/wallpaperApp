@@ -29,9 +29,13 @@ class _ImageViewState extends State<ImageView> {
                  Stack(
                    children: [
                      Container(
+                       decoration: BoxDecoration(
+                           border: Border.all(color: Colors.white54, width: 1),
+                           borderRadius: BorderRadius.circular(30),
+                         color: Color(0xff1C1B1B).withOpacity(0.8),
+                       ),
                        width: MediaQuery.of(context).size.width/2,
                        height: 50,
-                       color: Color(0xff1C1B1B).withOpacity(0.8),
                      ),
                      Container(
                        height: 50,
