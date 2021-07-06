@@ -93,7 +93,8 @@ class _HomeState extends State<Home> {
                   children: [
                     Text("Made For ",style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black54, fontSize: 16),),
                     Text("Anshika Singh ", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 16),),
-                    Icon(MdiIcons.heart)
+                    Icon(MdiIcons.heart,
+                    color: Colors.red,)
                   ],
                 ),
               ),
