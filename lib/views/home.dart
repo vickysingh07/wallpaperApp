@@ -91,8 +91,8 @@ class _HomeState extends State<Home> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Made For ",style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black54, fontSize: 16),),
-                    Text("Anshika Singh ", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 16),),
+                    Text("Made By ",style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black54, fontSize: 16),),
+                    Text("Vicky Singh ", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 16),),
                     Icon(MdiIcons.heart,
                     color: Colors.red,)
                   ],
